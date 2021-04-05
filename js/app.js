@@ -18,7 +18,7 @@ let mark = 0;
 
 let question1 = prompt('Do you think that HTML stands for "Hypertext Markup Language" ?! , yes/y or no/n');
 question1 = question1.toLowerCase();
-console.log(question1);
+// console.log('Do you think that HTML stands for "Hypertext Markup Language" ?! ',question1);
 
 if (question1 === 'yes' || question1 === 'y') {
     alert('Yes, correct answer, +1 mark ,' + 'The sum of the marks is : ' + ++mark);
@@ -32,7 +32,7 @@ if (question1 === 'yes' || question1 === 'y') {
 
 let question2 = prompt('Do you think that CSS stands for "Cascading Sheets Style" ?! , yes/y or no/n');
 question2 = question2.toLowerCase();
-console.log(question2);
+// console.log('Do you think that CSS stands for "Cascading Sheets Style" ?! ',question2);
 
 if (question2 === 'yes' || question2 === 'y') {
     alert('No, wrong answer ,' + 'The sum of the marks is : ' + mark);
@@ -46,7 +46,7 @@ if (question2 === 'yes' || question2 === 'y') {
 
 let question3 = prompt('Is this tag included in HTML tags? " <image> " ?! , yes/y or no/n');
 question3 = question3.toLowerCase();
-console.log(question3);
+// console.log( 'Is this tag included in HTML tags? " <image> " ?! ' ,question3);
 
 if (question3 === 'yes' || question3 === 'y') {
     alert('No, wrong answer ,' + 'The sum of the marks is : ' + mark);
@@ -60,7 +60,7 @@ if (question3 === 'yes' || question3 === 'y') {
 
 let question4 = prompt('WHAT JavaScript : is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Is that correct ?! , yes/y or no/n');
 question4 = question4.toLowerCase();
-console.log(question4);
+// console.log('WHAT JavaScript : is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Is that correct ?! ' ,question4);
 
 if (question4 === 'yes' || question4 === 'y') {
     alert('Yes, correct answer, +1 mark ,' + 'The sum of the marks is : ' + ++mark);
@@ -73,7 +73,7 @@ if (question4 === 'yes' || question4 === 'y') {
 
 let question5 = prompt('Markdown is a program language. Is that correct ?! , yes/y or no/n');
 question5 = question5.toLowerCase();
-console.log(question5);
+// console.log( 'Markdown is a program language. Is that correct ?! ' , question5);
 
 if (question5 === 'yes' || question5 === 'y') {
     alert('No, wrong answer ,' + 'The sum of the marks is : ' + mark);
