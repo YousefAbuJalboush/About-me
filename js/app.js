@@ -20,6 +20,7 @@ q1();
 q2();
 q3();
 q4();
+q5();
 
 function q1(){
   let question1 = prompt('If you are attentive, is my name "Yousef Abu-Jalboush" ?! , yes/y or no/n');
@@ -83,25 +84,20 @@ function q4(){
   }
 }
 
+function q5(){
+  let question5 = prompt('Do you think I like seafood ?! , yes/y or no/n');
+  question5 = question5.toLowerCase();
+  // console.log( 'Do you think I like seafood ?! ' , question5);
 
+  if (question5 === 'yes' || question5 === 'y') {
+    alert('No, wrong answer : Actually, I don\'t like seafood , ' + ' marks is : ' + mark);
+  } else if (question5 === 'no' || question5 === 'n') {
+    alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
+  } else {
+    alert('You have not entered a correct answer from among the options yes/y or no/n.');
+  }
 
-
-let question5 = prompt('Do you think I like seafood ?! , yes/y or no/n');
-question5 = question5.toLowerCase();
-// console.log( 'Do you think I like seafood ?! ' , question5);
-
-if (question5 === 'yes' || question5 === 'y') {
-  alert('No, wrong answer : Actually, I don\'t like seafood , ' + ' marks is : ' + mark);
-} else if (question5 === 'no' || question5 === 'n') {
-  alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
-} else {
-  alert('You have not entered a correct answer from among the options yes/y or no/n.');
 }
-
-
-
-
-
 
 
 let question6 = prompt('From my personal cover photo, how tall do you think I am ?!');
