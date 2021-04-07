@@ -10,6 +10,8 @@
 
 ### pair programming by:
 ### Navigator: Yousef Abu-Jalboush
-### Driver: Jana Abdelkader
+### i was i navigatior : https://github.com/YousefAbuJalboush/About-me/pull/8
+### Driver: Jana Abdelkader 
+### i was i driver : https://github.com/Jana998-alt/About-me/pull/9
 
 ### We have put the loops inside functions. 
