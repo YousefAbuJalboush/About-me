@@ -22,6 +22,8 @@ q3();
 q4();
 q5();
 q6();
+q7();
+takeMark();
 
 function q1(){
   let question1 = prompt('If you are attentive, is my name "Yousef Abu-Jalboush" ?! , yes/y or no/n');
@@ -122,65 +124,55 @@ function q6(){
   alert('To remember, my height is 189');
 }
 
-
-
-let laptop = ['acer','asus','dell'];
-// console.log(laptop.length);
-let question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
-attempts:for ( let i = 6 ; i > 0 ; i-- ){
-  question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
-  for ( let j = 0 ; j < laptop.length ; j++ ){
-    if ( laptop[j] === question7.toLowerCase()) {
-      console.log(laptop[j]);
-      alert('Yes, I guessed it '+ ' marks is : ' + ++mark);
-      break attempts;
+function q7(){
+  let laptop = ['acer','asus','dell'];
+  // console.log(laptop.length);
+  let question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
+  attempts:for ( let i = 6 ; i > 0 ; i-- ){
+    question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
+    for ( let j = 0 ; j < laptop.length ; j++ ){
+      if ( laptop[j] === question7.toLowerCase()) {
+        console.log(laptop[j]);
+        alert('Yes, I guessed it '+ ' marks is : ' + ++mark);
+        break attempts;
+      }
     }
   }
+  let contentArray = '';
+  for (let i = 0 ; i <= laptop.length - 1 ; i++ ) {
+    contentArray += laptop[i] + ' / ';
+  }
+  alert('These are the correct answers :  '+contentArray);
+
 }
 
-
-
-
-
-
-
-
-
-
-
-let contentArray = '';
-for (let i = 0 ; i <= laptop.length - 1 ; i++ ) {
-  contentArray += laptop[i] + ' / ';
-}
-alert('These are the correct answers :  '+contentArray);
-
-
-
-switch (mark) {
-case 0:
-  alert('Your final mark is : '+ mark +'/7 , You don\'t know anything about me.');
-  break;
-case 1:
-  alert('Your final mark is : '+ mark +'/7 , You know very little about me.');
-  break;
-case 2:
-  alert('Your final mark is : '+ mark +'/7 , You know a little about me.');
-  break;
-case 3:
-  alert('Your final mark is : '+ mark +'/7 , You only know me by form.');
-  break;
-case 4:
-  alert('Your final mark is : '+ mark +'/7 , You know good information about my character.');
-  break;
-case 5:
-  alert('Your final mark is : '+ mark +'/7 , You know me well.');
-  break;
-case 6:
-  alert('Your final mark is : '+ mark +'/7 , You know me well, good.');
-  break;
-case 7:
-  alert('Your final mark is : '+ mark +'/7 , You know me well, very good.');
-  break;
+function takeMark(){
+  switch (mark) {
+  case 0:
+    alert('Your final mark is : '+ mark +'/7 , You don\'t know anything about me.');
+    break;
+  case 1:
+    alert('Your final mark is : '+ mark +'/7 , You know very little about me.');
+    break;
+  case 2:
+    alert('Your final mark is : '+ mark +'/7 , You know a little about me.');
+    break;
+  case 3:
+    alert('Your final mark is : '+ mark +'/7 , You only know me by form.');
+    break;
+  case 4:
+    alert('Your final mark is : '+ mark +'/7 , You know good information about my character.');
+    break;
+  case 5:
+    alert('Your final mark is : '+ mark +'/7 , You know me well.');
+    break;
+  case 6:
+    alert('Your final mark is : '+ mark +'/7 , You know me well, good.');
+    break;
+  case 7:
+    alert('Your final mark is : '+ mark +'/7 , You know me well, very good.');
+    break;
+  }
 }
 
 alert('Thanks for visiting my platform');
