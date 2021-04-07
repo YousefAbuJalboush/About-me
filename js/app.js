@@ -16,17 +16,23 @@ if (gender === 'male') {
 alert('Welcome ' + title + userName.toUpperCase() + ' ,Now we can start with some general questions.');
 let mark = 0;
 
-let question1 = prompt('If you are attentive, is my name "Yousef Abu-Jalboush" ?! , yes/y or no/n');
-question1 = question1.toLowerCase();
-// console.log('If you are attentive, is my name "Yousef Abu-Jalboush" ?! ',question1);
+q1();
 
-if (question1 === 'yes' || question1 === 'y') {
-  alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
-} else if (question1 === 'no' || question1 === 'n') {
-  alert('No, wrong answer : my name "Yousef Abu-Jalboush" ,' + ' marks is : ' + mark);
-} else {
-  alert('You have not entered a correct answer from among the options yes/y or no/n.');
+
+function q1(){
+  let question1 = prompt('If you are attentive, is my name "Yousef Abu-Jalboush" ?! , yes/y or no/n');
+  question1 = question1.toLowerCase();
+  // console.log('If you are attentive, is my name "Yousef Abu-Jalboush" ?! ',question1);
+
+  if (question1 === 'yes' || question1 === 'y') {
+    alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
+  } else if (question1 === 'no' || question1 === 'n') {
+    alert('No, wrong answer : my name "Yousef Abu-Jalboush" ,' + ' marks is : ' + mark);
+  } else {
+    alert('You have not entered a correct answer from among the options yes/y or no/n.');
+  }
 }
+
 
 
 
