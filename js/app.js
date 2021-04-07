@@ -89,9 +89,9 @@ if (question5 === 'yes' || question5 === 'y') {
 
 
 
-
+let question6 = prompt('From my personal cover photo, how tall do you think I am ?!');
 for (let i = 4; i > 0 ; i--){
-  let question6 = prompt('From my personal cover photo, how tall do you think I am ?!');
+  question6 = prompt('From my personal cover photo, how tall do you think I am ?!');
   question6 = parseInt(question6);
   if (question6 === 189) {
     alert('You did it guessed the answer, it was a hard question ,' + ' marks is : ' + ++mark);
@@ -114,18 +114,26 @@ alert('To remember, my height is 189');
 
 let laptop = ['acer','asus','dell'];
 // console.log(laptop.length);
-
-for ( let i = 6 ; i > 0 ; i-- ){
-  let question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
+let question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
+attempts:for ( let i = 6 ; i > 0 ; i-- ){
+  question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
   for ( let j = 0 ; j < laptop.length ; j++ ){
     if ( laptop[j] === question7.toLowerCase()) {
       console.log(laptop[j]);
       alert('Yes, I guessed it '+ ' marks is : ' + ++mark);
-      i = 0 ;
-      break;
+      break attempts;
     }
   }
 }
+
+
+
+
+
+
+
+
+
 
 
 let contentArray = '';
