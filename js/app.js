@@ -18,6 +18,7 @@ let mark = 0;
 
 q1();
 q2();
+q3();
 
 function q1(){
   let question1 = prompt('If you are attentive, is my name "Yousef Abu-Jalboush" ?! , yes/y or no/n');
@@ -49,17 +50,22 @@ function q2(){
 
 }
 
-let question3 = prompt('Do you think I am good at speaking Chinese ?! , yes/y or no/n');
-question3 = question3.toLowerCase();
-// console.log( 'Do you think I am good at speaking Chinese ?! ' ,question3);
+function q3(){
 
-if (question3 === 'yes' || question3 === 'y') {
-  alert('No, wrong answer : In fact, I hate Asian languages, and I cannot speak them ,' + ' marks is : ' + mark);
-} else if (question3 === 'no' || question3 === 'n') {
-  alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
-} else {
-  alert('You have not entered a correct answer from among the options yes/y or no/n.');
+  let question3 = prompt('Do you think I am good at speaking Chinese ?! , yes/y or no/n');
+  question3 = question3.toLowerCase();
+  // console.log( 'Do you think I am good at speaking Chinese ?! ' ,question3);
+
+  if (question3 === 'yes' || question3 === 'y') {
+    alert('No, wrong answer : In fact, I hate Asian languages, and I cannot speak them ,' + ' marks is : ' + mark);
+  } else if (question3 === 'no' || question3 === 'n') {
+    alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
+  } else {
+    alert('You have not entered a correct answer from among the options yes/y or no/n.');
+  }
+
 }
+
 
 
 
