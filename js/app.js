@@ -21,6 +21,7 @@ q2();
 q3();
 q4();
 q5();
+q6();
 
 function q1(){
   let question1 = prompt('If you are attentive, is my name "Yousef Abu-Jalboush" ?! , yes/y or no/n');
@@ -99,27 +100,27 @@ function q5(){
 
 }
 
-
-let question6 = prompt('From my personal cover photo, how tall do you think I am ?!');
-for (let i = 4; i > 0 ; i--){
-  question6 = prompt('From my personal cover photo, how tall do you think I am ?!');
-  question6 = parseInt(question6);
-  if (question6 === 189) {
-    alert('You did it guessed the answer, it was a hard question ,' + ' marks is : ' + ++mark);
-    break;
-  }else if ( question6 < 189) {
-    alert('Too low , You have 4 attempts in total');
-    continue;
-  }else if ( question6 > 189) {
-    alert('Too high , You have 4 attempts in total');
-    continue;
-  }else{
-    alert('You missed the answer , You have 4 attempts in total');
-    continue;
+function q6(){
+  let question6 = prompt('From my personal cover photo, how tall do you think I am ?!');
+  for (let i = 4; i > 0 ; i--){
+    question6 = prompt('From my personal cover photo, how tall do you think I am ?!');
+    question6 = parseInt(question6);
+    if (question6 === 189) {
+      alert('You did it guessed the answer, it was a hard question ,' + ' marks is : ' + ++mark);
+      break;
+    }else if ( question6 < 189) {
+      alert('Too low , You have 4 attempts in total');
+      continue;
+    }else if ( question6 > 189) {
+      alert('Too high , You have 4 attempts in total');
+      continue;
+    }else{
+      alert('You missed the answer , You have 4 attempts in total');
+      continue;
+    }
   }
+  alert('To remember, my height is 189');
 }
-alert('To remember, my height is 189');
-
 
 
 
