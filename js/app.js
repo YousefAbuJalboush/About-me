@@ -19,6 +19,7 @@ let mark = 0;
 q1();
 q2();
 q3();
+q4();
 
 function q1(){
   let question1 = prompt('If you are attentive, is my name "Yousef Abu-Jalboush" ?! , yes/y or no/n');
@@ -67,19 +68,22 @@ function q3(){
 }
 
 
+function q4(){
 
+  let question4 = prompt('Do you think I enrolled with ASAC to learn seriously ?! , yes/y or no/n');
+  question4 = question4.toLowerCase();
+  // console.log('Do you think I enrolled with ASAC to learn seriously ?! ' ,question4);
 
-let question4 = prompt('Do you think I enrolled with ASAC to learn seriously ?! , yes/y or no/n');
-question4 = question4.toLowerCase();
-// console.log('Do you think I enrolled with ASAC to learn seriously ?! ' ,question4);
-
-if (question4 === 'yes' || question4 === 'y') {
-  alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
-} else if (question4 === 'no' || question4 === 'n') {
-  alert('No, wrong answer : You really think so, of course I enrolled to learn and further my experience , ' + ' marks is : ' + mark);
-} else {
-  alert('You have not entered a correct answer from among the options yes/y or no/n.');
+  if (question4 === 'yes' || question4 === 'y') {
+    alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
+  } else if (question4 === 'no' || question4 === 'n') {
+    alert('No, wrong answer : You really think so, of course I enrolled to learn and further my experience , ' + ' marks is : ' + mark);
+  } else {
+    alert('You have not entered a correct answer from among the options yes/y or no/n.');
+  }
 }
+
+
 
 
 let question5 = prompt('Do you think I like seafood ?! , yes/y or no/n');
