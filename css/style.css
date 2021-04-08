@@ -5,14 +5,15 @@ body{
     background-size: cover;
     position: relative;
 }
-/* ***************************************************************** */
+
+
+
 
 header {
     display: flex;
     color: #e8ead3;
     font-size: 18px;
     width: 100%;
-    /* margin-top: -7%; */
     position:fixed;
     z-index: 1;
 }
@@ -29,7 +30,6 @@ header {
 header nav ul li{
     display: inline-block ;
 
-    /* background-color: red ; */
     list-style-type: none ;
     padding: 20px;
 }
@@ -42,7 +42,9 @@ header nav ul li input {
     height: 25px;
 }
 
-/* ***************************************************************** */
+
+
+
 #biography{
     width: 60%;
     background-color: #341a40cc ;
@@ -51,8 +53,6 @@ header nav ul li input {
     position: absolute;
     left: 20%;
     top: 15%;
-    /* margin: 7% 0% 0% 20%  ; */
-    /* justify-content: center; */
     border-radius: 7%;
 }
 
@@ -79,16 +79,15 @@ header nav ul li input {
     font-weight: 400;
 }
 
-/* ****************************************************************** */
+
+
+
+
 
 #laptops{
     width: 60%;
-    /* height: 300px; */
     background-color: #341a40cc ;
     color: #e8ead3;
-    /* text-align: left; */
-    /* margin: 5% 0% 0% 20%  ; */
-    /* justify-content: center; */
     border-radius: 7%;
     position: absolute;
     left: 20%;
