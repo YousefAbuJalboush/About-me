@@ -28,7 +28,6 @@ takeMark();
 function q1(){
   let question1 = prompt('If you are attentive, is my name "Yousef Abu-Jalboush" ?! , yes/y or no/n');
   question1 = question1.toLowerCase();
-  // console.log('If you are attentive, is my name "Yousef Abu-Jalboush" ?! ',question1);
 
   if (question1 === 'yes' || question1 === 'y') {
     alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
@@ -43,7 +42,6 @@ function q1(){
 function q2(){
   let question2 = prompt('Do you think that I am from Morocco ?! , yes/y or no/n');
   question2 = question2.toLowerCase();
-  // console.log('Do you think that I am from Morocco ?! ',question2);
 
   if (question2 === 'yes' || question2 === 'y') {
     alert('No, wrong answer : I am from Jordan ,' + ' marks is : ' + mark);
@@ -59,7 +57,6 @@ function q3(){
 
   let question3 = prompt('Do you think I am good at speaking Chinese ?! , yes/y or no/n');
   question3 = question3.toLowerCase();
-  // console.log( 'Do you think I am good at speaking Chinese ?! ' ,question3);
 
   if (question3 === 'yes' || question3 === 'y') {
     alert('No, wrong answer : In fact, I hate Asian languages, and I cannot speak them ,' + ' marks is : ' + mark);
@@ -76,7 +73,6 @@ function q4(){
 
   let question4 = prompt('Do you think I enrolled with ASAC to learn seriously ?! , yes/y or no/n');
   question4 = question4.toLowerCase();
-  // console.log('Do you think I enrolled with ASAC to learn seriously ?! ' ,question4);
 
   if (question4 === 'yes' || question4 === 'y') {
     alert('Yes, correct answer, +1 mark ,' + ' marks is : ' + ++mark);
@@ -90,7 +86,6 @@ function q4(){
 function q5(){
   let question5 = prompt('Do you think I like seafood ?! , yes/y or no/n');
   question5 = question5.toLowerCase();
-  // console.log( 'Do you think I like seafood ?! ' , question5);
 
   if (question5 === 'yes' || question5 === 'y') {
     alert('No, wrong answer : Actually, I don\'t like seafood , ' + ' marks is : ' + mark);
@@ -126,13 +121,11 @@ function q6(){
 
 function q7(){
   let laptop = ['acer','asus','dell'];
-  // console.log(laptop.length);
   let question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
   attempts:for ( let i = 6 ; i > 0 ; i-- ){
     question7 = prompt('Which type of laptop do you think I own ?! , You have 6 attempts');
     for ( let j = 0 ; j < laptop.length ; j++ ){
       if ( laptop[j] === question7.toLowerCase()) {
-        console.log(laptop[j]);
         alert('Yes, I guessed it '+ ' marks is : ' + ++mark);
         break attempts;
       }
