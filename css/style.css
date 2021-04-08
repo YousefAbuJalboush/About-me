@@ -12,9 +12,9 @@ header {
     color: #e8ead3;
     font-size: 18px;
     width: 100%;
-    margin-top: -7%;
-    
+    /* margin-top: -7%; */
     position:fixed;
+    z-index: 1;
 }
 header h1 {
     margin: 1.4%;
@@ -48,7 +48,10 @@ header nav ul li input {
     background-color: #341a40cc ;
     color: #e8ead3;
     text-align: center;
-    margin: 7% 0% 0% 20%  ;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    /* margin: 7% 0% 0% 20%  ; */
     /* justify-content: center; */
     border-radius: 7%;
 }
@@ -84,9 +87,12 @@ header nav ul li input {
     background-color: #341a40cc ;
     color: #e8ead3;
     /* text-align: left; */
-    margin: 5% 0% 0% 20%  ;
+    /* margin: 5% 0% 0% 20%  ; */
     /* justify-content: center; */
     border-radius: 7%;
+    position: absolute;
+    left: 20%;
+    top: 55%;
 }
 
 #laptops div {
